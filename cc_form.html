@@ -1,0 +1,75 @@
+<!--Credit Card Payment
+Create a form that allows a user to enter information to make a credit card purchase.
+
+Search the internet for examples.
+Should at least contain fields for: (use the correct types for 'input' fields to ensure proper data is entered)
+Name
+Email
+Card number
+Expiration date
+Security code
+Must use fieldset elements
+Must contain labels
+-->
+<fieldset>
+    <label for="payment-select"> Debit or Credit </label>
+    <select name="payment" id="payment-select">
+      <option value="" disabled selected>--Please choose an option--</option>
+      <option value="debit">debit</option>
+      <option value="credit">credit</option>
+    
+    </select>
+  </fieldset>
+<!--Customer information added-->
+<form>
+    <fieldset>
+      <legend>Customer Information</legend>
+      <p>
+          <label>Please type the name on the card</label>
+      </p>
+      <p>
+        <label for="first-name"> First Name </label>
+        <input type="text" name="first-name" id="first-name" />
+      </p>
+      <p>
+        <label for="last-name"> Last Name </label>
+        <input type="text" name="Last-name" id="Last-name" />
+      </p>
+      <p>
+        <label>What is the address associated with the card?</label>
+      </p>
+      <p>
+        <label for="address"> Home Address </label>
+        <input type="text" name="address" id="address" />
+      </p>
+    <p>
+        <label for="Email_address"> Email address </label>
+        <input type="text" name="Email_address" id="Email_address" />
+    </p>
+  <!--Add a text box for credit card number to be entered-->
+<p>
+    <label>Please enter your card number</label>
+</p>
+<p>
+    <label for="card_number"> Card number </label>
+    <input type="text" name="card_number" id="card_number" />
+</p>
+<!--Expiration date for credit card-->
+<p>
+    <label>Please enter the expiration date on your card</label>
+</p>
+<p>
+    <label for="expiration_date"> Expiration Date </label>
+    <input type="text" name="expiration_date" id="exipration_date" /> 
+</p>
+<p>
+    <label>Type security code</label>
+</p>
+<p>
+    <label for="security_code"> Security Code </label>
+    <input type="text" name="security_code" id="security code" />
+</p>
+   
+    </fieldset>
+     <input type="submit" id="submit-button" value="submit" /> 
+</form>
